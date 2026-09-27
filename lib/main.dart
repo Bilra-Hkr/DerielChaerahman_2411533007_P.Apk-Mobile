@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'user_registration_form.dart';
+import 'add_transaction_screen.dart'; //file form input
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Form Pendaftaran',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const UserRegistrationForm(),
+      debugShowCheckedModeBanner: false,
+      title: 'Expense Tracker - Modul 3',
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      home: const AddTransactionScreen(), //Membuka halaman form
     );
   }
 }
